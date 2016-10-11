@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="../build/react.js"></script>
+    <script src="../build/react-dom.js"></script>
+    <script src="../build/browser.min.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+    <div id='myname'></div>
+    <div id="example2"></div>
+
+    <script type="text/babel">
+      var arr = [
+        <h1>Hello world!</h1>,
+        <h2>React is awesome</h2>,
+      ];
+      ReactDOM.render(
+        <div>{arr}</div>,
+        document.getElementById('example')
+      );
+
+      ReactDOM.render(
+        <div>{arr}</div>,
+        document.getElementById('example2')
+      );
+//中午乱码如何解决
+      var friutsarr = [
+        <h1>模板标题1</h1>
+        ,
+        <h6>---副标题---</h6>
+      ];
+      ReactDOM.render(
+        <div>{ friutsarr }</div>,
+        document.getElementById('myname')
+      );
+
+
+    </script>
+  </body>
+</html>
